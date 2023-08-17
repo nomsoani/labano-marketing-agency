@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.payment-section {  
+    height: auto;
+    
+}
+
+.payment-div {
+    background: linear-gradient(to right, #303030 0%, #212529 100%);
+    min-height: 60vh;
+    border-radius: 10px;
+    margin: 10rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+}
+
+.p-h1 {
+    padding: 3rem;
+}
+
+.instagram {
+    padding-top: 3rem;
+
+}
+
+.p-p {
+    padding-top: 0.5rem;
+}
+
+.p-btn {
+    background-color:  #6e0b9c;
+    margin-left: 20px;
+    border-radius: 10px;
+    width: 6rem;
+    padding: 10px;
+    color: #fff;
+    animation: zoom-in-zoom-out 5s ease-out infinite; 
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.1, 1.1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+  .p-btn:hover {
+    background-color: rgb(219, 49, 83);
+  }
+
+
+  
+  @media (min-width: 1px) and (max-width: 575px) {
+
+    .payment-div {
+        padding: auto;
+    }
+
+    .p-h1 {
+        font-size: 25px;
+    }
+
+    .p-h6 {
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 1px) and (max-width: 485px) {
+
+    .p-btn {
+       margin-left: 10px;
+       font-size: 15px;
+       max-width: 85px;
+    }
+
+    .p-p {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1px) and (max-width: 445px) {
+
+    .p-btn {
+        margin-left: 8px;
+        font-size: 13px;
+        max-width: 80px;
+     }
+ 
+     .p-p {
+         font-size: 13px;
+     }
+
+     .p-h1 {
+        font-size: 20px;
+    }
+
+    .p-h6 {
+        font-size: 15px;
+    }
+    
+}
+
+@media (min-width: 1px) and (max-width: 392px) {
+
+    .p-btn {
+        margin-left: 6px;
+        font-size: 10px;
+        max-width: 70px;
+     }
+ 
+     .p-p {
+         font-size: 11px;
+     }
+
+     .p-h1 {
+        font-size: 18px;
+    }
+
+    .p-h6 {
+        font-size: 13px;
+    }
+    
+}
+
+@media (min-width: 1px) and (max-width: 337px) {
+
+    .p-btn {
+        margin-left: 5px;
+        font-size: 10px;
+        max-width: 70px;
+     }
+ 
+     .p-p {
+         font-size: 10px;
+     }
+
+     .p-h1 {
+        font-size: 20px;
+    }
+
+    .p-h6 {
+        font-size: 15px;
+    }
+    
+}
+
+@media (min-width: 1px) and (max-width: 315px) {
+
+    .p-btn {
+        font-size: 10px;
+        max-width: 60px;
+     }
+ 
+     .p-p {
+         font-size: 10px;
+     }
+    
+}
+
+@media (min-width: 1px) and (max-width: 305px) {
+
+.instagram {
+    display: grid;
+}
+ 
+    
+}
+
+
+
+
+
+
+
+
+
