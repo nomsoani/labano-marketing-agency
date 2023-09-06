@@ -509,7 +509,7 @@ input:focus {
 }
 
 .screen-header-button.minimize {
-  background: #b016d6;
+  background: #5b1dea;
 }
 
 .screen-header-right {
@@ -804,7 +804,15 @@ footer {
 
 
 
-/*                               services pages                          */
+
+/* <---------------------//                     other pages css                          //-------------------------> */
+
+
+
+
+
+
+/*      ----------------       services pages         ----------------     */
 
 .hero-sect {
   min-height: 100vh;
@@ -814,11 +822,30 @@ footer {
   border-radius: 10px;
   height: auto;
   min-width: 100%;
+  animation: zoom-in-zoom-out 15s ease-out infinite;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
 }
+
+
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(0.8, 0.8);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
 
 .hero {
   padding-top: 8rem;
 }
+
+.hero-test {
+  animation: zoom-in-zoom-out 10s ease-out infinite;
+} 
 
 .hero-test h1{
   font-weight: 700;
@@ -860,6 +887,10 @@ footer {
   .hero-test h1 {
     font-size: 22px;
   }
+  
+  .hero {
+    padding-top: 1rem;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -889,7 +920,7 @@ footer {
 
 
 
-/*                               about us page                          */
+/*    ------------------     about us page          --------------------      */
 
 .about-pic img {
   width: 100%;
@@ -960,10 +991,79 @@ footer {
 }
 
 
+/* numbers section  */
+
+.no-sec {
+  background-color: #02083d;
+  min-height: 30vh;
+}
+
+.no {
+  margin-inline: 6rem;
+  color: #fff;
+}
+
+.no h4 {
+  font-size: 50px;
+}
+
+/* m/q */
+
+@media (min-width: 1px) and (max-width: 768px) {
+  .no h4 {
+    font-size: 40px;
+  }
+}
+
+
+@media (min-width: 1px) and (max-width: 575px) {
+  .no-sec {
+    margin-top: 3rem;
+  }
+
+  .no h4 {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 1px) and (max-width: 425px) {
+
+  .no h4 {
+    font-size: 30px;
+  }
+
+  .no p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1px) and (max-width: 375px) {
+  
+  .no h4 {
+    font-size: 28px;
+  }
+
+  .no p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1px) and (max-width: 320px) {
+  
+  .no h4 {
+    font-size: 25px;
+  }
+
+  .no p {
+    font-size: 10px;
+  }
+}
+
  /* our team section */
 
  .team-sec {
-  background: linear-gradient(45deg, #222968 10%, #77072b 80%);
+  background-color: #fcfcfc;
+  color: #01041d;
  }
 
  .team-text {
@@ -971,9 +1071,10 @@ footer {
  }
 
  .team-p {
-  font-size: larger;
+  font-size: large;
   padding-left: 10px;
   padding-right: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
  }
  
  .team-img {
@@ -1040,10 +1141,3 @@ footer {
     font-size: small;
   }
  }
-
-
-
-
-
-
-/*                               partner page                           */
